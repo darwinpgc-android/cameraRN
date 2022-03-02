@@ -1,0 +1,12 @@
+While addin "react-native-android" into the project 
+remember to add following files under "android / app / build.gradle" file 
+
+
+
+    android {
+  ...
+  defaultConfig {
+    ...
+    missingDimensionStrategy 'react-native-camera', 'general' <-- insert this line
+  }
+}
